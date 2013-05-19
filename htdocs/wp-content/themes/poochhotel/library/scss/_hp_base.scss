@@ -1,0 +1,176 @@
+/******************************************************************
+Site Name: Pooch Hotel
+Author: Paul Larrow, Feast LLC
+
+Stylesheet: Homepage Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+
+body.home {
+	header[role=banner] {
+		background-position: center 5px;
+		#inner-header { z-index: 20; }
+		.wrap { position: relative; }
+	}
+	#content {
+		background: url(../images/background-pattern-honeycomb-fade.jpg) repeat-x top center;
+		.wrap { padding: 0; background: transparent; }
+	}
+	#main {
+		margin-top: -5px;
+	}
+}
+#menu-main-navigation li .dropdown { display: none; }
+
+
+
+/* normal site style overrides */
+.home.page #content {
+	position: relative;
+}
+
+.home.page #content .wrap {
+	width: 100%;
+	overflow: visible;
+	//height: 400px;
+}
+
+
+
+/*********************************** HERO SLIDE STYLES ***********************************/
+
+/* Home Slide - Default */
+#slider {
+	display: block;
+	position: relative;
+	height: 400px;
+	width: 100%;
+	background: #000;
+	.details {
+		margin: 0 0 0 4%;
+	}
+	.slide {
+		display: block;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+	}
+	.slide-contents {
+		display: block;
+		position: relative;
+		left:0px;
+		top:0px;
+		margin: 0px auto 0px;
+		border: 1px solid transparent; /* this fixes relative positioning! */
+		
+		h2 {
+			font-family: $din-regular,arial;
+			font-size: 34px;
+			margin: 280px 0 0 0;
+			color: white;
+			text-shadow: -1px 2px 4px #000;
+			line-height: .85em;
+			text-transform: uppercase;
+		}
+		p {
+			display: none;
+		}
+		ul {
+			list-style: none;
+			color: white;
+			font-family: $din-regular,serif;
+			text-transform: uppercase;
+			padding-left: 10px;
+			width: 250px;
+		}
+		li {
+			margin-bottom: 13px;
+			line-height: 1.2;
+			font-size: 14px;
+			&:last-child {
+				font-size: 17px;
+				margin: 19px 0 30px 0;
+			}
+		}
+		.cta {
+			a.img-button span {
+				padding-top: 10px;
+			}
+		}
+	}
+}
+
+html.ie7 #slider .slide {
+	display: inline;
+	position: relative;
+}
+a.full_slide {
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+
+
+/*********************************** HERO SLIDE STYLES ***********************************/
+
+
+/* home slider pagination */
+#centeredmenu {
+	float: left;
+	width: 35%;
+	position: relative;
+	overflow: hidden;
+	top: 340px;
+	left: 65%;
+}
+
+#slider .pagination {
+	position: relative; 
+	left: 50%;
+	float:left;
+	z-index: 6;
+	text-align:center;
+	margin-left: 0px;
+}
+#slider .pagination li { float: left; margin: 0 5px; list-style: none; right:50%; display:block; position:relative;}
+#slider .pagination li a { background: url(../images/homepage/nav-slider.png) left top no-repeat; width: 17px; height: 19px; text-indent: -9999em; display: block; outline: none; }
+#slider .pagination li.current a { background-position: left bottom; }
+
+#slider .slide-2,
+#slider .slide-3,
+#slider .slide-4,
+#slider .slide-5,
+#slider .slide-6,
+#slider .slide-7,
+#slider .slide-8,
+#slider .slide-9
+{
+	display: none;
+}
+
+#slider .loadingAni {
+	display: none;
+	position: absolute;
+	margin: -20px 0 0 -20px;
+	width: 40px;
+	height: 40px;
+	left: 50%;
+	top: 45%;
+	z-index: 100;
+}
+
+/*********************************** SUBSECTIONS ***********************************/
+
+
+

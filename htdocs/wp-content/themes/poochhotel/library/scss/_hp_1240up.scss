@@ -1,0 +1,34 @@
+/******************************************************************
+Site Name: Pooch Hotel
+Author: Paul Larrow, Feast LLC
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+
+
+.slider-nav {
+	position: absolute;
+	display: block;
+	top: 170px;
+	left: 50%;
+	overflow: hidden;
+	width: 25px;
+	height: 90px;
+	text-indent: -9999px;
+	white-space: nowrap;
+}
+
+.prev-slide {
+	margin-left: -595px;
+	background: url(../images/pooch-sprite.png) no-repeat -766px -595px;
+}
+
+.next-slide {
+	margin-left: 570px;
+	background: url(../images/pooch-sprite.png) no-repeat -718px -595px;
+}
+

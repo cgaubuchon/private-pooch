@@ -1,0 +1,74 @@
+/******************************************************************
+Site Name: Pooch Hotel
+Author: Paul Larrow, Feast LLC
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to 
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection. 
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+
+body.home {
+	#main {}
+}
+
+
+
+/*********************************** HERO SLIDE STYLES ***********************************/
+
+/* Home Slide - Default */
+#slider {
+	.textright {
+		.details {
+			margin: 7% 0 0 70%;
+			width: 240px;
+		}
+	}
+	.textleft {
+		.details {
+			margin: 5% 0 0 8%;
+			width: 250px;
+		}
+	}
+	.slide-contents {
+		p {
+			display: block;
+			font-family: $din-regular, arial;
+			font-weight: normal;
+			font-size: 14px;
+			color: white;
+			line-height: 1.3;
+			opacity: .99;
+			
+			a {
+				color: $link-hover;
+				text-decoration: none;
+				&:visited { color: $link-hover; }
+				&:hover { color: $link-hover-light; }
+				&:active { color: $link-hover-light; }
+				&:focus { color: $link-hover-light; }
+			}
+		}
+		h2 {
+			font-size: 48px;	
+			margin: 0;
+		}
+	}
+}
+
+
+/*********************************** HERO SLIDE STYLES ***********************************/
+
+
+/* home slider pagination */
+#centeredmenu {
+	width:15%;
+	left: 85%;
+}
